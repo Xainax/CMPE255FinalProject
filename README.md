@@ -1,5 +1,8 @@
 # CMPE255FinalProject
 
+# Problem Statement
+In today’s society, phishing has become one of the most popular cyberattacks. Many online users often press links and have sensitive user information stolen without their knowledge. Although phishing is inherently simple and can be avoided easily, the majority of victims fall for phishing due to carelessness. Phishing usually targets human mistakes and weaknesses compared to other cyberattacks that focus on vulnerabilities in the hardware or software. Our project aims to build a classifier that will predict whether a URL is phishing or legitimate.
+
 # Group Members
 Eric Pham, Student ID: 014900964
 
@@ -9,6 +12,9 @@ Venkata Sai Sri Harsha Kata, Student ID: 017604522
 
 # Dataset Link
 https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset
+
+This dataset contains a total of 235,795 samples of website URLs, with a distribution of 134,850 legitimate URLs and 100,945 phishing URLs. The dataset has a total of 54 features that were extracted from both the source code of the website and the URL. The features consist of elements that are typically used to determine if a website URL is phishing, like URL length, suspicious characters in the URL, and the number of external links/redirects. For general data preprocessing, we dropped all the categorical features that we weren’t going to use, applied one-hot encoding to the categorical column we were using, and scaled the numerical features using StandardScaler.
+
 
 # Instructions to run the Jupyter notebook
 1. Clone the GitHub repo or make sure you have these files downloaded: PhiUSIIL_Phishing_URL_Dataset.csv, Updated_model(1).ipynb, and url_classifier_model.joblib.
